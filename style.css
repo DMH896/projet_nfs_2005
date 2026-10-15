@@ -1,0 +1,299 @@
+
+label {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #101216;
+  color: #f3f3f3;
+  line-height: 1.6;
+}
+
+a {
+  color: #ff4b32;
+}
+
+.site-header {
+  background: #08090b;
+  border-bottom: 3px solid #e43b27;
+  padding: 14px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: #ff4b32;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ddd;
+  padding: 8px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  color: white;
+  background: #e43b27;
+}
+
+.principal {
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  padding: 50px 8%;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("images/nfs-most-wanted-2005-is-20-years-old-v0-crg52pms0jof1.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-bottom: 2px solid orange;
+}
+
+.principal-content {
+    flex: 1;
+}
+
+.eyebrow {
+  color: #ff5a44;
+  font-size: .8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+h1 {
+  font-size: clamp(2rem, 6vw, 4.2rem);
+  line-height: 1.05;
+  margin: 10px 0 18px;
+}
+
+.hero h1 span {
+  color: #ff4b32;
+}
+
+h2 {
+  margin-top: 30px;
+  color: #fff;
+}
+
+h3 {
+  margin-bottom: 8px;
+}
+
+.container {
+  width: min(1100px, 88%);
+  margin: 0 auto;
+}
+
+.container > h2:first-child {
+  margin-top: 36px;
+}
+
+.page {
+  padding-top: 35px;
+  padding-bottom: 55px;
+}
+
+.button {
+  display: inline-block;
+  border: 0;
+  background: #e43b27;
+  color: white;
+  padding: 12px 18px;
+  margin-top: 12px;
+  margin-right: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ff5a44;
+}
+
+.button-secondary {
+  background: #383c43;
+}
+
+.cards,
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.card,
+.car-card,
+.dark-panel,
+.notice {
+  background: #1b1e24;
+  border: 1px solid #343840;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card-icon {
+  font-size: 2rem;
+}
+
+.notice {
+  border-left: 4px solid #e43b27;
+  margin: 25px 0;
+}
+
+.source {
+  margin: 25px 0;
+}
+
+.wide-image {
+  display: block;
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #454952;
+  margin: 20px 0;
+  background: #222;
+}
+
+.number-list,
+.feature-list {
+  padding-left: 24px;
+}
+
+.number-list li,
+.feature-list li {
+  margin: 10px 0;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+.image-voiture {
+  min-height: 120px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: white;
+  text-shadow: 0 2px 8px #000;
+}
+
+.bmw {
+  background: linear-gradient(135deg, #172b43, #5e6a79, #15191f);
+}
+
+.mustang {
+  background: linear-gradient(135deg, #7c211b, #db4a2d, #242424);
+}
+
+.porsche {
+  background: linear-gradient(135deg, #a9a9a9, #414750, #17191d);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #1b1e24;
+}
+
+th,
+td {
+  border: 1px solid #444852;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #e43b27;
+}
+
+tr:nth-child(even) {
+  background: #23262d;
+}
+
+form {
+  margin-top: 25px;
+}
+
+fieldset {
+  border: 1px solid #41454e;
+  background: #1b1e24;
+  border-radius: 7px;
+  margin: 16px 0;
+  padding: 16px 20px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 6px;
+}
+
+fieldset label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: #e43b27;
+  margin-right: 8px;
+}
+
+.result {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 7px;
+  background: #20242b;
+  border-left: 4px solid #e43b27;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #08090b;
+  color: #a9abb0;
+  border-top: 1px solid #30333a;
+  font-size: .9rem;
+}

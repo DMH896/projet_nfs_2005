@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - NFS Most Wanted 2005</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="accueil.html">NFS <span>2005</span></a>
+    <nav>
+      <a href="accueil.html">Accueil</a>
+      <a href="histoire.html">Histoire</a>
+      <a href="gameplay.html">Gameplay</a>
+      <a href="voitures.html">Voitures</a>
+      <a class="active" href="quiz.html">Quiz</a>
+    </nav>
+  </header>
+
+  <main class="container page">
+    <p class="eyebrow">À TOI DE JOUER</p>
+    <h1>Quiz : connais-tu le jeu ?</h1>
+    <p>Réponds aux 10 questions puis clique sur le bouton pour afficher ton résultat.</p>
+
+    <form id="quiz-form">
+      <fieldset>
+        <legend>1. En quelle année le jeu est-il sorti ?</legend>
+        <label><input type="radio" name="q1" value="a"> 2002</label>
+        <label><input type="radio" name="q1" value="b"> 2005</label>
+        <label><input type="radio" name="q1" value="c"> 2012</label>
+      </fieldset>
+      <fieldset>
+        <legend>2. Quel est le genre principal du jeu ?</legend>
+        <label><input type="radio" name="q2" value="a"> Course automobile</label>
+        <label><input type="radio" name="q2" value="b"> Jeu de stratégie</label>
+        <label><input type="radio" name="q2" value="c"> Jeu de football</label>
+      </fieldset>
+      <fieldset>
+        <legend>3. Comment s'appelle la ville du jeu ?</legend>
+        <label><input type="radio" name="q3" value="a"> Vice City</label>
+        <label><input type="radio" name="q3" value="b"> Los Santos</label>
+        <label><input type="radio" name="q3" value="c"> Rockport</label>
+      </fieldset>
+      <fieldset>
+        <legend>4. Quelle voiture est emblématique de l'histoire du jeu ?</legend>
+        <label><input type="radio" name="q4" value="a"> BMW M3 GTR</label>
+        <label><input type="radio" name="q4" value="b"> Mini Cooper</label>
+        <label><input type="radio" name="q4" value="c"> Volkswagen Coccinelle</label>
+      </fieldset>
+      <fieldset>
+        <legend>5. Qui poursuit souvent le joueur ?</legend>
+        <label><input type="radio" name="q5" value="a"> Les pompiers</label>
+        <label><input type="radio" name="q5" value="b"> La police</label>
+        <label><input type="radio" name="q5" value="c"> Les taxis</label>
+      </fieldset>
+      <fieldset>
+        <legend>6. Combien de pilotes compte la liste noire ?</legend>
+        <label><input type="radio" name="q6" value="a"> 5</label>
+        <label><input type="radio" name="q6" value="b"> 10</label>
+        <label><input type="radio" name="q6" value="c"> 15</label>
+      </fieldset>
+      <fieldset>
+        <legend>7. Quel est l'objectif principal de la carrière ?</legend>
+        <label><input type="radio" name="q7" value="a"> Remonter la liste noire</label>
+        <label><input type="radio" name="q7" value="b"> Reparer les voitures</label>
+        <label><input type="radio" name="q7" value="c"> Construire une ville</label>
+      </fieldset>
+      <fieldset>
+        <legend>8. Que peut-on améliorer sur une voiture ?</legend>
+        <label><input type="radio" name="q8" value="a"> Sa météo</label>
+        <label><input type="radio" name="q8" value="b"> Ses performances</label>
+        <label><input type="radio" name="q8" value="c"> Sa taille</label>
+      </fieldset>
+      <fieldset>
+        <legend>9. Quel studio est associé au développement du jeu ?</legend>
+        <label><input type="radio" name="q9" value="a"> EA Black Box</label>
+        <label><input type="radio" name="q9" value="b"> Mojang</label>
+        <label><input type="radio" name="q9" value="c"> Rockstar North</label>
+      </fieldset>
+      <fieldset>
+        <legend>10. Que faut-il faire pendant une poursuite ?</legend>
+        <label><input type="radio" name="q10" value="a"> Garer la voiture et attendre</label>
+        <label><input type="radio" name="q10" value="b"> Échapper à la police</label>
+        <label><input type="radio" name="q10" value="c"> Arrêter toutes les courses</label>
+      </fieldset>
+      <button class="button" type="submit">Voir mon résultat</button>
+      <button class="button button-secondary" type="reset">Recommencer</button>
+    </form>
+    <div id="resultat" class="result" aria-live="polite"></div>
+  </main>
+  <footer>Projet BTS CIEL · Fait par BOTNARU DIONISIE · Site non officiel</footer>
+  <script src="script.js"></script>
+</body>
+</html>
